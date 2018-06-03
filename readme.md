@@ -1,5 +1,5 @@
 ﻿
-[![npm version](https://badge.fury.io/js/topcloudvision.svg)](https://badge.fury.io/js/topcloudvision)
+[![npm version](https://badge.fury.io/js/tcvision.svg)](https://badge.fury.io/js/topcloudvision)
 
 **Top Cloud Vision** – Send an image to the top 3 cloud vision apis and format the json result
 
@@ -15,12 +15,12 @@ This first release features smart image labels detection. Support for more api f
 
 ## Quick Start
 
-1. **Install the node package:**
+**Install the node package:**
   ```bash
-  npm install topcloudvision -g
+  npm install tcvision -g
   ```
 
-2. **Configure a cloud services credentials file:**
+**Configure a cloud services credentials file:**
 
 Edit the example config.json and configure all required fields marked with '****'
   ```bash
@@ -39,24 +39,24 @@ Edit the example config.json and configure all required fields marked with '****
 }
   ```
 
-3. **Run from command line or use in your node project:**
+**Run from command line or use in your node project:**
  
  Command line usage:
   ```bash
   # This will output the result json to the console
-  topcloudvision -i image.jpg -c config.json
+  tcvision -i image.jpg -c config.json
   ```
  
  Use in your node project:
   ```javascript
 //////////////////////////////////////
 //// EXAMPLE USAGE:
-var topcloudvision = require('topcloudvision');
+var tcvision = require('tcvision');
 
 let inputImage = "image.jpg";
 let configFile = "config.json";
 
-topcloudvision.runTopCloudVision(configFile,inputImage,bucketName).then(function(response){
+tcvision.runTopCloudVision(configFile,inputImage,bucketName).then(function(response){
   console.log(response['runVisionServices'])
 });
 //////////////////////////////////////

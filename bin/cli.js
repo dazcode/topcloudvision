@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 var program = require('commander');
-var topcloudvision = require('./index');
+var tcvision = require('./index');
 
 program
-    .name('tcv')
+    .name('tcvision')
     .description('Send an image to the top 3 cloud vision apis and format the json result')
     .version('0.0.1')
     .option('-i, --image [filename]', 'input image filename (required)')
@@ -31,6 +31,6 @@ if(!inputImage){
 
 
 
-topcloudvision.runTopCloudVision(tcvconfigfile, inputImage,bucketName).then(function (response) {
+tcvision.runTopCloudVision(tcvconfigfile, inputImage,bucketName).then(function (response) {
     console.log(response['runVisionServices'])
 });

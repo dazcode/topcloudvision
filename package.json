@@ -1,10 +1,11 @@
 {
-  "name": "topcloudvision",
+  "name": "tcvision",
   "version": "0.0.1",
   "description": "Send an image to the top 3 cloud vision apis and format the json result",
   "main": "bin/index.js",
   "bin": {
     "topcloudvision": "bin/cli.js",
+    "tcvision": "bin/cli.js",
     "tcv": "bin/cli.js"
   },
   "scripts": {},
@@ -43,7 +44,6 @@
     "url": "https://github.com/dazcode/topcloudvision/issues"
   },
   "homepage": "https://github.com/dazcode/topcloudvision#readme",
-  "private": true,
   "dependencies": {
     "aws-sdk": "^2.247.1",
     "commander": "^2.15.1",
