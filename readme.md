@@ -1,5 +1,5 @@
 ﻿
-[![npm version](https://badge.fury.io/js/tcvision.svg)](https://badge.fury.io/js/topcloudvision)
+[![npm version](https://badge.fury.io/js/tcvision.svg)](https://badge.fury.io/js/tcvision)
 
 **Top Cloud Vision** – Send an image to the top 3 cloud vision apis and format the json result
 
