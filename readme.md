@@ -1,4 +1,4 @@
-
+﻿
 [![npm version](https://badge.fury.io/js/topcloudvision.svg)](https://badge.fury.io/js/topcloudvision)
 
 **Top Cloud Vision** – Send an image to the top 3 cloud vision apis and format the json result
@@ -7,7 +7,7 @@ This project offers a quick and easy way to compare the latest image analysis se
 
 This first release features smart image labels detection. Support for more api features will be implemented in the upcoming version.
 
-[View Demo Examples](https://github.com/dazcode/topcloudvision/test/)
+[View Demo Examples](https://github.com/dazcode/topcloudvision/tree/master/test)
 
 
 * QuickStart
