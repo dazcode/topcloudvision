@@ -1,0 +1,13 @@
+{   
+    "accessKeyId": "****",
+    "secretAccessKey": "****",
+    "region": "us-east-1",
+    "defaultBucketName": "****",
+    "signedExpireTime":600,
+    
+    "azureKey": "****",
+    "azureEndpoint": "https://westcentralus.api.cognitive.microsoft.com/vision/v2.0/analyze",
+
+    "googleKey": "****",
+    "googleEndpoint": "https://vision.googleapis.com/v1/images"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "topcloudvision",
+  "version": "0.0.1",
+  "description": "Send an image to the top 3 cloud vision apis and format the json result",
+  "main": "bin/index.js",
+  "bin": {
+    "topcloudvision": "bin/cli.js",
+    "tcv": "bin/cli.js"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dazcode/topcloudvision.git"
+  },
+  "keywords": [
+    "artificial",
+    "intelligence",
+    "Rekognition",
+    "aws",
+    "google",
+    "gcloud",
+    "cloud",
+    "azure",
+    "microsoft",
+    "image",
+    "photo",
+    "ai",
+    "cloud",
+    "vision",
+    "smart",
+    "compare",
+    "test",
+    "json",
+    "analysis",
+    "contrast",
+    "evaluate",
+    "setup",
+    "configure"
+  ],
+  "author": "David Zentner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dazcode/topcloudvision/issues"
+  },
+  "homepage": "https://github.com/dazcode/topcloudvision#readme",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "^2.247.1",
+    "commander": "^2.15.1",
+    "request": "^2.87.0"
+  },
+  "devDependencies": {}
+}
