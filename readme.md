@@ -17,7 +17,7 @@ This first release features smart image labels detection. Support for more api f
 
 1. **Install the node package:**
   ```bash
-  npm install topcloudvision
+  npm install topcloudvision -g
   ```
 
 2. **Configure a cloud services credentials file:**
