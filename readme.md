@@ -55,7 +55,8 @@ Edit the example config.json and configure all required fields marked with '****
 var topcloudvision = require('topcloudvision');
 
 /* 
-The private signed url used to share the image has a 600 second default expire time
+A secure url is generated for each image and used to access the s3 bucket by Google Cloud and Azure.
+The expire time for the url is set in the config file.
 */
 
 let inputImage = "image.jpg";
