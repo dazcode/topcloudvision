@@ -54,7 +54,9 @@ Edit the example config.json and configure all required fields marked with '****
 //// EXAMPLE USAGE:
 var topcloudvision = require('topcloudvision');
 
-/* The image is uploaded to the specified s3 bucket, and a private signed URL to the image is used to share the image with external cloud vision apis (Google Cloud, Azure). The expiration time for the signed url can be set in the json config. */
+/* 
+The private signed url used to share the image has a 600 second default expire time
+*/
 
 let inputImage = "image.jpg";
 let bucketName = "myBucketName";
