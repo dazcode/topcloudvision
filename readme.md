@@ -1,7 +1,7 @@
 ﻿
-[![npm version](https://badge.fury.io/js/tcvision.svg)](https://badge.fury.io/js/tcvision)
+[![npm version](https://badge.fury.io/js/topcloudvision.svg)](https://badge.fury.io/js/topcloudvision)
 
-**Top Cloud Vision** – Send an image to the top 3 cloud vision apis and format the json result
+**TopCloudVision** – Send an image to the top 3 cloud vision apis and format the json result
 
 This project offers a quick and easy way to compare the latest image analysis services offered by Google, Azure and AWS.
 
@@ -11,13 +11,14 @@ This first release features smart image labels detection. Support for more api f
 
 
 * QuickStart
+* Overview Diagram
 * Contact
 
 ## Quick Start
 
 **Install the node package:**
   ```bash
-  npm install tcvision -g
+  npm install topcloudvision
   ```
 
 **Configure a cloud services credentials file:**
@@ -44,25 +45,29 @@ Edit the example config.json and configure all required fields marked with '****
  Command line usage:
   ```bash
   # This will output the result json to the console
-  tcvision -i image.jpg -c config.json
+  topcloudvision -i image.jpg -c config.json
   ```
  
  Use in your node project:
   ```javascript
 //////////////////////////////////////
 //// EXAMPLE USAGE:
-var tcvision = require('tcvision');
+var topcloudvision = require('topcloudvision');
+
+/* The image is uploaded to the specified s3 bucket, and a private signed URL to the image is used to share the image with external cloud vision apis (Google Cloud, Azure). The expiration time for the signed url can be set in the json config. */
 
 let inputImage = "image.jpg";
+let bucketName = "myBucketName";
 let configFile = "config.json";
 
-tcvision.runTopCloudVision(configFile,inputImage,bucketName).then(function(response){
+topcloudvision.runTopCloudVision(configFile,inputImage,bucketName).then(function(response){
   console.log(response['runVisionServices'])
 });
 //////////////////////////////////////
   ```
 
-
+## Overview Diagram
+![alt text](https://raw.githubusercontent.com/dazcode/topcloudvision/master/docs/TopCloudVisionOverview.png)
 
 ## Contact
 

@@ -25,12 +25,11 @@ let bucketName = program.bucket;
 if(!tcvconfigfile){
     console.log('TopCloudVision config file required. (example: -c config.json)')
 }
-if(!inputImage){
+else if(!inputImage){
     console.log('Input image required. (example: -i image.jpg)')
 }
-
-
-
+else{
 tcvision.runTopCloudVision(tcvconfigfile, inputImage,bucketName).then(function (response) {
     console.log(response['runVisionServices'])
 });
+}

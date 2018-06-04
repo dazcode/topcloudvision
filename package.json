@@ -1,6 +1,6 @@
 {
-  "name": "tcvision",
-  "version": "0.0.1",
+  "name": "topcloudvision",
+  "version": "0.0.2",
   "description": "Send an image to the top 3 cloud vision apis and format the json result",
   "main": "bin/index.js",
   "bin": {
